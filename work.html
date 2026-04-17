@@ -1,0 +1,26 @@
+---
+layout: default
+title: Work History
+back: true
+---
+
+  <h1>Work History</h1>
+
+  {% for job in site.data.jobs %}
+  <article class="job">
+    <div class="job-header">
+      <div>
+        <span class="job-title">{{ job.title }}</span>
+        <span class="job-company"> · {{ job.company }}</span>
+      </div>
+      <span class="job-dates">{{ job.dates }}</span>
+    </div>
+    {% if job.bullets.size > 0 %}
+    <ul>
+      {% for bullet in job.bullets %}
+      <li>{{ bullet }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </article>
+  {% endfor %}

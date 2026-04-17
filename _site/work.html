@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work History · Braun Brennecke</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0d1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 6rem;
+    }
+
+    /* ── Typography ── */
+    h1 { font-size: 2rem; font-weight: 600; margin: 0 0 0.25rem; }
+    h2 {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7d8590;
+      margin: 3rem 0 1rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #21262d;
+    }
+    p { margin: 0 0 1rem; color: #8b949e; }
+    a { color: #58a6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ── Nav ── */
+    nav {
+      position: fixed;
+      top: 1.25rem;
+      right: 1.5rem;
+      font-size: 0.85rem;
+    }
+    nav a { color: #7d8590; }
+    nav a:hover { color: #e6edf3; text-decoration: none; }
+
+    /* ── About ── */
+    .about {
+      display: flex;
+      gap: 1.5rem;
+      align-items: flex-start;
+      margin-top: 0.5rem;
+    }
+
+    .avatar {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 1px solid #30363d;
+      object-fit: cover;
+    }
+
+    .bio { flex: 1; }
+    .bio .name { font-size: 1.5rem; font-weight: 600; margin: 0 0 0.1rem; }
+
+    /* ── Work History ── */
+    .job { margin-bottom: 2rem; }
+    .job:last-child { margin-bottom: 0; }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.4rem;
+    }
+
+    .job-title { font-weight: 600; font-size: 1rem; }
+    .job-company { color: #8b949e; font-size: 0.9rem; }
+    .job-dates { font-size: 0.85rem; color: #7d8590; white-space: nowrap; }
+
+    .job ul {
+      margin: 0.5rem 0 0;
+      padding-left: 1.25rem;
+      color: #8b949e;
+    }
+    .job li { margin-bottom: 0.25rem; font-size: 0.92rem; }
+
+    /* ── Shared list (publications & speaking) ── */
+    .entry-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .entry-list li {
+      display: grid;
+      grid-template-columns: 6rem 1fr;
+      gap: 0.5rem 1rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid #21262d;
+      font-size: 0.92rem;
+      align-items: baseline;
+    }
+    .entry-list li:last-child { border-bottom: none; }
+
+    .entry-date { color: #7d8590; white-space: nowrap; }
+    .entry-meta { color: #7d8590; font-size: 0.82rem; margin-top: 0.15rem; }
+    .entry-body { display: flex; flex-direction: column; }
+  </style>
+</head>
+<body>
+
+<nav><a href="/">← Back</a></nav>
+
+<main>
+  <h1>Work History</h1>
+
+  
+  <article class="job">
+    <div class="job-header">
+      <div>
+        <span class="job-title">Data Science Senior Manager</span>
+        <span class="job-company"> · Rockwell Automation</span>
+      </div>
+      <span class="job-dates">Sep 2021 – Present</span>
+    </div>
+    
+  </article>
+  
+  <article class="job">
+    <div class="job-header">
+      <div>
+        <span class="job-title">Senior Software Engineer, Advanced Analytics</span>
+        <span class="job-company"> · Rockwell Automation</span>
+      </div>
+      <span class="job-dates">Jul 2019 – Sep 2021</span>
+    </div>
+    
+  </article>
+  
+  <article class="job">
+    <div class="job-header">
+      <div>
+        <span class="job-title">Senior Information Solutions Engineer</span>
+        <span class="job-company"> · Rockwell Automation</span>
+      </div>
+      <span class="job-dates">Jan 2014 – Jul 2019</span>
+    </div>
+    
+  </article>
+  
+  <article class="job">
+    <div class="job-header">
+      <div>
+        <span class="job-title">Assistant Organist/Accompanist</span>
+        <span class="job-company"> · First United Methodist Church Hollidaysburg</span>
+      </div>
+      <span class="job-dates">Feb 2013 – Jan 2014</span>
+    </div>
+    
+  </article>
+  
+  <article class="job">
+    <div class="job-header">
+      <div>
+        <span class="job-title">Controls Intern</span>
+        <span class="job-company"> · First Quality</span>
+      </div>
+      <span class="job-dates">May 2013 – Aug 2013</span>
+    </div>
+    
+  </article>
+  
+  <article class="job">
+    <div class="job-header">
+      <div>
+        <span class="job-title">Construction Management Intern</span>
+        <span class="job-company"> · Turner Construction Company</span>
+      </div>
+      <span class="job-dates">Jun 2012 – Oct 2012</span>
+    </div>
+    
+  </article>
+  
+
+</main>
+</body>
+</html>
